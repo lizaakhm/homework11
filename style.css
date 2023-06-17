@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+}
+
+:root {
+    --bg:#FFFFFF;
+    --h2: #13183F;
+    --text: #83869A;
+    --a: #F74780;
+    --button1: #666CA3;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--h2);
+    margin-bottom: 26px;
+    }
+
+h2 {
+    font-weight: 800;
+    font-size: 28px;
+    color: var(--h2);
+    margin-top: 6px;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--h2);
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--h2);
+}
+
+.container {
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    align-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px -1px 0 114px;
+
+}
+
+.textCont{
+    width: 100%;
+    margin: auto;
+}
+
+
+.pink {
+    display: none;
+}
+
+.fbtn {
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    background-color: var(--h2);
+    border-style: none;
+    cursor: pointer;
+}
+
+.gtst {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--bg);
+}
+
+.text {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 26px;
+}
+
+.btn2 {
+    width: 167px;
+    height: 56px;
+    border-radius: 31.5px;
+    border-style: none;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    margin: 38px 0 66px 0;
+    padding: 0 16px 0 16px;
+}
+
+.mb {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.imgcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.tablet {
+    display: none;
+}
+
+.pfp {
+    position: relative;
+}
+
+.bxtext {
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 34px 54px 0px #06168D29;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.mem {
+    width: 105px;
+    left: 246px;
+    top: 327px;
+}
+
+.coursehours {
+    width: 155px;
+    left: 24px;
+    top:140%
+}
+
+.bx {
+    width: 343px;
+    margin-top: 66px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    padding: 24px 29px 32px 28px;
+}
+
+.bx2 {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--bg);
+}
+
+.second {
+    padding: 0 16px 0 16px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--a);
+}
+
+.cards {
+    background-color: var(--bg);
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    padding: 56px 29px 32px 28px;
+    position: relative;
+}
+
+.cardtext {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logos {
+    position: absolute;
+    top: -20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--h2);
+    margin-top: 80px;
+    padding: 46px 7px 53px 11px;
+}
+
+.skilled {
+    color: var(--bg);
+}
+
+.lbtn {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+}
+
+
+
+
+
+@media screen and (min-width: 760px) {
+    .container {
+        width: 768px;
+        overflow: hidden;
+    }
+
+    .header {
+        padding: 25px 50px 0 54px;
+    }
+
+    .first {
+        flex-direction: row;
+        padding: 50px 80px 30px 39px;
+        margin: 0;
+    }
+
+    .textCont {
+        width: 398px;
+        margin-left: 5%;
+        margin-top: 100px;
+    }
+    
+
+    .imagcont {
+        position: relative;
+    }
+
+     .pink {
+        display: block;
+        width: 216px;
+        height: 688px;
+     }
+ 
+    .pfp {
+        bottom: 105%;
+        display: none;
+    }
+
+    .tablet {
+        bottom: 94%;
+        display: block;
+        position: relative;
+        margin-left: 11px;
+    }
+    .mem {
+        z-index: 7;
+        top: 55%;
+        left: 80%;
+    }
+
+    .coursehours {
+        z-index: 7;
+        top: 120%;
+        left: 50%;
+    }
+
+    .second {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 24px 7px 0 57px;
+        gap: 11px;
+    }
+    .footer{
+        
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--h2);
+    margin-top: 80px;
+    padding: 60px 58px 53px 70px;
+
+    }
+}
+
+@media screen and (min-width: 1450px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        padding: 24px 165px 0 165px;
+    }
+
+    .first {
+        padding: 0;
+        justify-content: space-around;
+        margin-bottom: 110px;
+    }
+
+    .textCont {
+        width: 445px;
+        margin-top: 178px;
+    }
+
+    .tablet {
+        width: 317px;
+        height: 560px;
+        position: relative;
+        bottom: 15%;
+        right: 67%;
+    }
+
+    .pink {
+        position: relative;
+        width: 182px;
+        height: 143px;
+        top: -118px;
+        right: 278px;
+    } 
+
+    .mem {
+        width: 155px;
+        height: 120px;
+        z-index: 1;
+        top: 20%;
+        left: 80%;
+        align-items: flex-start;
+        padding-left: 24px;
+    }
+
+    .coursehours {
+        width: 199px;
+        height: 120px;
+        z-index: 1;
+        top: 70%;
+        left: 60%;
+        align-items: flex-start;
+        padding-left: 24px;
+    }
+
+    .second {
+        grid-template-columns: auto auto auto;
+        padding: 24px 165px 0 165px;
+        gap: 30px;
+    }
+
+    .footer {
+        width: 100%;
+        margin-top: 140px;
+        padding: 32px 165px 32px 165px;
+    }
+
+    .fbtn:hover { 
+        transition: .4s;
+        background-color: var(--button1);
+    }
+
+    .btn2:hover { 
+        transition: .4s;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+   }
+
+   .lbtn:hover {
+    transition: .4s;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+   }
+}
